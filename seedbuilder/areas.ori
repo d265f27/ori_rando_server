@@ -362,8 +362,8 @@ home: SunkenGladesRunaway
 	conn: DeathGauntletDoor
 		casual-core ChargeJump
 		casual-core Grenade Bash
-		casual-dboost WallJump
-		casual-dboost Climb
+		casual-dboost WallJump Health=3
+		casual-dboost Climb Health=3
 		standard-lure Bash
 		master-core DoubleJump
 	conn: SpiritTreeRefined
@@ -610,7 +610,7 @@ home: MidSpiritCaverns
 		casual-core Climb
 		casual-core Bash Grenade
 		casual-core ChargeJump
-		casual-dboost DoubleJump
+		casual-dboost DoubleJump Health=2
 		standard-core Bash
 home: UpperSpiritCaverns
 	-- anchor: on the platform above the top right keystone
@@ -618,8 +618,8 @@ home: UpperSpiritCaverns
 		casual-core WallJump
 		casual-core DoubleJump Climb
 		casual-core Glide Climb
-		casual-dboost ChargeJump
-		casual-dboost Bash
+		casual-dboost ChargeJump Health=2
+		casual-dboost Bash Health=2
 		standard-core ChargeJump
 		standard-core Bash
 		master-core Climb
@@ -638,7 +638,7 @@ home: SpiritTreeDoorOpened
 		casual-core WallJump
 		casual-core Climb
 		casual-core Bash
-		casual-dboost ChargeJump
+		casual-dboost ChargeJump Health=2
 		master-core DoubleJump
 	conn: UpperSpiritCaverns
 home: GladesLaserArea
@@ -648,7 +648,7 @@ home: GladesLaserArea
 		casual-core ChargeJump
 		casual-core Bash Grenade
 		standard-lure Bash
-		expert-dboost WallJump Glide
+		expert-dboost WallJump Glide Health=2
 		expert-abilities Dash Ability=6
 	pickup: GladesLaserGrenade
 		casual-core Grenade Climb ChargeJump Bash
@@ -801,8 +801,8 @@ home: SpiderSacTetherArea
 		casual-core Grenade WallJump
 		casual-core Grenade DoubleJump
 		casual-core Grenade Climb ChargeJump
-		casual-dboost ChargeFlame
-		casual-dboost Grenade
+		casual-dboost ChargeFlame Health=2
+		casual-dboost Grenade Health=2
 		expert-abilities Dash Ability=6
 		master-core ChargeFlame DoubleJump
 		master-core Grenade DoubleJump
@@ -886,7 +886,7 @@ home: SpiderWaterArea
 		expert-dboost Bash Health=5
 		master-dboost Health=5
 		master-dboost Health=4 Ability=12
-		master-dboost Bash Ability=12
+		master-dboost Bash Ability=12 Health=3
 	pickup: GroveAboveSpiderWaterExp
 		casual-core ChargeJump DoubleJump WallJump
 		casual-core ChargeJump DoubleJump Climb
@@ -953,9 +953,9 @@ home: SpiderWaterArea
 		expert-dboost WallJump Stomp Health=5
 		expert-dboost Climb Stomp Health=5
 		expert-dboost DoubleJump Stomp Health=5
-		master-dboost WallJump Stomp Ability=12
-		master-dboost Climb Stomp Ability=12
-		master-dboost DoubleJump Stomp Ability=12
+		master-dboost WallJump Stomp Ability=12 Health=3
+		master-dboost Climb Stomp Ability=12 Health=3
+		master-dboost DoubleJump Stomp Ability=12 Health=3
 home: BlackrootDarknessRoom
 	-- anchor: just after watching/skipping the BRB entrance cutscene
 	pickup: DashAreaOrbRoomExp
@@ -1035,12 +1035,12 @@ home: DashArea
 		casual-core Dash Bash Grenade
 		casual-core Dash Climb DoubleJump
 		standard-core Bash Grenade
-		standard-abilities WallJump
-		standard-abilities ChargeJump
-		standard-abilities Climb DoubleJump
+		standard-abilities WallJump Ability=0
+		standard-abilities ChargeJump Ability=0
+		standard-abilities Climb DoubleJump Ability=0
 		standard-abilities Climb Dash Ability=3
-		expert-abilities Climb
-		master-abilities DoubleJump
+		expert-abilities Climb Ability=0
+		master-abilities DoubleJump Ability=0
 home: DashPlantAccess
 	-- anchor: on the ledge next to the plant, or within grenade throw range
 	pickup: DashAreaPlant
@@ -1061,7 +1061,7 @@ home: RazielNoArea
 		expert-core WallJump
 		expert-core Climb DoubleJump
 		expert-core ChargeJump
-		expert-dboost Dash Climb Ability=3
+		expert-dboost Dash Climb Ability=3 Health=3
 		glitched Climb
 	conn: GumoHideout
 		glitched Dash WallJump
@@ -1100,7 +1100,7 @@ home: GrenadeAreaAccess
 	conn: LowerBlackroot
 		casual-core DoubleJump
 		casual-core Climb ChargeJump
-		casual-dboost Free
+		casual-dboost Health=3	
 		standard-core Bash Grenade
 		expert-abilities Dash Ability=3
 		dbash Bash
@@ -1128,7 +1128,7 @@ home: GrenadeArea
 		casual-core Dash Bash Glide
 		casual-core ChargeJump DoubleJump
 		casual-core Bash Grenade
-		casual-dboost ChargeJump
+		casual-dboost ChargeJump Health=3
 		standard-core Dash DoubleJump
 		expert-abilities Dash Ability=6
 		dbash Bash WallJump
@@ -1195,15 +1195,15 @@ home: LostGrove
 	conn: LostGroveExit
 		casual-core Grenade Bash DoubleJump WallJump
 		casual-core Grenade Bash DoubleJump Climb
-		casual-dboost Grenade ChargeJump DoubleJump WallJump
-		casual-dboost Grenade ChargeJump DoubleJump Climb
+		casual-dboost Grenade ChargeJump DoubleJump WallJump Health=3
+		casual-dboost Grenade ChargeJump DoubleJump Climb Health=3
 		expert-core Grenade Bash WallJump
 		expert-core Grenade Bash Climb
 		expert-core Grenade Glide ChargeJump Climb
 		expert-dboost Grenade ChargeJump WallJump Health=7
 		expert-dboost Grenade ChargeJump Climb Health=7
-		expert-dboost Grenade Dash ChargeJump WallJump
-		expert-dboost Grenade Glide ChargeJump WallJump
+		expert-dboost Grenade Dash ChargeJump WallJump Health=3 Ability=3
+		expert-dboost Grenade Glide ChargeJump WallJump Health=3
 		expert-abilities Grenade Dash ChargeJump Climb Ability=3
 		master-abilities Grenade DoubleJump WallJump Ability=12
 		master-abilities Grenade DoubleJump Climb Ability=12
@@ -1816,7 +1816,7 @@ home: MoonGrottoAboveTeleporter
 	conn: MoonGrottoSwampAccessArea
 		casual-core ChargeJump DoubleJump
 		casual-core Bash
-		casual-dboost DoubleJump
+		casual-dboost DoubleJump Health=3
 		standard-dboost ChargeJump Health=3
 		expert-dboost Dash Health=4
 		expert-abilities Dash Ability=6
@@ -1830,15 +1830,15 @@ home: MoonGrotto
 	-- anchor: on the teleporter
 	pickup: GrottoEnergyDoorSwim
 		casual-core Energy=2 Water
-		expert-dboost Energy=2
+		expert-dboost Energy=2 Health=3
 	pickup: GrottoEnergyDoorHealthCell
 		casual-core Energy=2 ChargeJump
 		casual-core Energy=2 Bash Grenade
 		casual-core Energy=2 WallJump DoubleJump
-		standard-dboost Energy=2 WallJump
+		standard-dboost Energy=2 WallJump Health=3
 		standard-abilities Energy=2 Climb Dash Ability=3
 		expert-core Energy=2 Climb Glide
-		expert-dboost Energy=2 Climb DoubleJump
+		expert-dboost Energy=2 Climb DoubleJump Health=2
 		expert-abilities Energy=2 Dash Ability=6
 	conn: MoonGrottoAboveTeleporter
 		casual-core WallJump
@@ -1979,8 +1979,8 @@ home: GumoHideout
 	pickup: GumoHideoutCrusherKeystone
 		casual-core WallJump
 		casual-core Climb
-		casual-dboost ChargeJump
-		casual-dboost Bash Grenade
+		casual-dboost ChargeJump Health=3
+		casual-dboost Bash Grenade Health=3
 		expert-core DoubleJump
 	conn: DoubleJumpKeyDoor
 		casual-core Keystone=2
@@ -2135,7 +2135,7 @@ home: LowerLeftGumoHideout
 		master-abilities DoubleJump Ability=12
 	pickup: LeftGumoHideoutSwim
 		casual-core Water
-		expert-dboost Free
+		expert-dboost Health=3
 	conn: LowerBlackroot
 		glitched Dash
 	conn: GumoHideoutRedirectArea
@@ -2172,9 +2172,9 @@ home: GumoHideoutRedirectArea
 		casual-core Glide
 		casual-core DoubleJump
 		casual-core Climb ChargeJump
-		casual-dboost WallJump
-		casual-dboost Climb
-		casual-dboost ChargeJump
+		casual-dboost WallJump Health=3
+		casual-dboost Climb Health=3
+		casual-dboost ChargeJump Health=3
 		standard-core Bash Grenade
 		standard-abilities Dash Ability=3
 	pickup: GumoHideoutRedirectPlant
@@ -2210,7 +2210,7 @@ home: SwampEntryArea
 	-- anchor: on the island with the energy crystal
 	pickup: SwampEntranceSwim
 		casual-core Water
-		expert-dboost Free
+		expert-dboost Health=3
 	pickup: SwampEntrancePlant
 		casual-core ChargeFlame WallJump
 		casual-core ChargeFlame Climb
@@ -2281,7 +2281,7 @@ home: Swamp
 		casual-core Glide
 		casual-core Bash Grenade
 		casual-core ChargeJump
-		casual-dboost Free
+		casual-dboost Health=3
 		standard-core Dash
 	conn: SwampWater
 		casual-core Water
@@ -2292,9 +2292,9 @@ home: SwampKeyDoorPlatform
 	pickup: InnerSwampStompExp
 		casual-core Stomp Water
 		expert-core ChargeJump Bash Grenade Water
-		expert-dboost Stomp
-		expert-dboost ChargeJump Bash Grenade
-		expert-dboost ChargeJump Dash Ability=3
+		expert-dboost Stomp Health=3
+		expert-dboost ChargeJump Bash Grenade Health=3
+		expert-dboost ChargeJump Dash Ability=3 Health=3
 		expert-abilities ChargeJump Dash Ability=3 Water
 		master-lure Bash Health=3
 		master-lure Bash Water
@@ -2347,7 +2347,7 @@ home: InnerSwampAboveDrainArea
 	conn: InnerSwampDrainBroken
 		casual-core Grenade
 		casual-core ChargeFlame Water
-		casual-dboost ChargeFlame
+		casual-dboost ChargeFlame Health=3
 home: InnerSwampDrainBroken
 	-- anchor: in the drain room, on the spike ledge, with the drain broken
 	pickup: InnerSwampDrainExp
@@ -2361,18 +2361,18 @@ home: InnerSwampDrainBroken
 		casual-core ChargeJump Climb DoubleJump
 		casual-core ChargeJump WallJump Glide
 		casual-core ChargeJump Climb Glide
-		casual-dboost ChargeJump WallJump
-		casual-dboost ChargeJump Climb
+		casual-dboost ChargeJump WallJump Health=3
+		casual-dboost ChargeJump Climb Health=3
 		expert-core ChargeJump DoubleJump
 		expert-core ChargeJump Glide
-		expert-dboost ChargeJump
+		expert-dboost ChargeJump Health=3
 		master-core Bash
 		-- connections by swimming
 		casual-core Water WallJump DoubleJump
 		casual-core Water WallJump Glide
 		casual-core Water Climb ChargeJump
 		casual-core Water Climb Bash Grenade
-		casual-dboost Water Climb Glide
+		casual-dboost Water Climb Glide Health=3
 		standard-core Water Climb DoubleJump
 		standard-abilities Water WallJump Dash Ability=3
 		standard-abilities Water Climb Dash Ability=3
@@ -2402,8 +2402,8 @@ home: SwampWater
 		casual-core Climb Bash
 		casual-core Climb DoubleJump
 		casual-core Climb Glide
-		casual-dboost WallJump
-		casual-dboost Climb
+		casual-dboost WallJump Health=3
+		casual-dboost Climb Health=3
 		standard-core WallJump Dash
 		standard-core Climb Dash
 		expert-core DoubleJump
@@ -2426,7 +2426,7 @@ home: RightSwamp
 		casual-core Grenade Water Bash Glide
 		casual-core Grenade Water ChargeJump Stomp
 		casual-core Grenade Water ChargeJump Climb Glide
-		casual-dboost Grenade Water ChargeJump
+		casual-dboost Grenade Water ChargeJump Health=3
 		standard-core Grenade Water Bash DoubleJump
 		standard-dboost Grenade Water Bash Health=3
 		expert-abilities Grenade Water Dash Ability=6 Energy=3
@@ -3324,14 +3324,14 @@ home: ValleyStomplessApproach
 		casual-core Bash
 		expert-dboost ChargeJump WallJump DoubleJump Health=4
 		expert-dboost ChargeJump Climb DoubleJump Health=4
-		master-dboost WallJump DoubleJump Ability=12
+		master-dboost WallJump DoubleJump Ability=12 Health=3
 	conn: ValleyStompless
 		casual-core Bash
 		expert-dboost ChargeJump WallJump DoubleJump Health=4
 		expert-dboost ChargeJump Climb DoubleJump Health=4
-		expert-abilities Dash WallJump DoubleJump Energy=2
-		expert-abilities Dash Climb DoubleJump Energy=2
-		master-dboost WallJump DoubleJump Ability=12
+		expert-abilities Dash WallJump DoubleJump Energy=2 Ability=6
+		expert-abilities Dash Climb DoubleJump Energy=2 Ability=6
+		master-dboost WallJump DoubleJump Ability=12 Health=3
 	conn: ValleyRight
 home: ValleyStompless
 -- anchored at the fast stompless aim position, rocks intact
@@ -4390,7 +4390,7 @@ home: MistyPostFeatherTutorial
 		standard-core Bash
 		standard-core Climb ChargeJump
 		standard-abilities WallJump DoubleJump Dash Ability=3
-		expert-dboost WallJump Dash Ability=3
+		expert-dboost WallJump Dash Ability=3 Health=4
 		expert-dboost WallJump Dash Health=7
 		expert-abilities Dash Ability=6
 		master-dboost DoubleJump Health=4
